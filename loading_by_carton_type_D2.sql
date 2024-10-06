@@ -141,7 +141,7 @@ left JOIN totalcartons ON CTCRTP=TYPE
 */
              LEFT JOIN totaltotal
                  ON CTCRTP = TOTTYPE
-        WHERE TYPE99 = ?
+        WHERE TYPE99 = ? -- '?' character used as parameter from loading by channel module
               AND CTCRTP NOT IN ('CGU', 'CLC', 'TST', 'PIZ')
         GROUP BY ctcrtp,
                  LOADED2,
